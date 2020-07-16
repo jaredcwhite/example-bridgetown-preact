@@ -18,7 +18,7 @@
 
 ## What This Example Does
 
-In [`Form.jsx`](https://github.com/jaredcwhite/example-bridgetown-preact/blob/master/frontend/javascript/Form.jsx), there is a custom element `<my-preact-form></my-preact-form>` which calls Preact's `render` function to render a `Form` component into the element node. All you have to do is add that element to an HTML page and that will mount the component.
+In [`Form.jsx`](https://github.com/jaredcwhite/example-bridgetown-preact/blob/master/frontend/javascript/Form.jsx), there is a custom element defined (`my-preact-form`) which calls Preact's `render` function to render a `Form` component into the element node. All you have to do is add that element to an HTML page and that will mount the component, e.g., `<my-preact-form></my-preact-form>`
 
 The `Form` component in turn sets up React Hook Form with all the usual stuff that library can do like provide validation, watch values for changes, serialize form values into JSON and perform custom logic upon submission, etc.
 
