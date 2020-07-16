@@ -2,6 +2,8 @@
 
 Bridgetown site example including Preact and React Hook Form
 
+**[DEMO SITE](https://example-bridgetown-preact.vercel.app)**
+
 ## Requirements:
 
 * Ruby version 2.5 or above (ruby version can be checked by running ruby -v)
