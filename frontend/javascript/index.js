@@ -1,5 +1,5 @@
 import "../styles/index.scss"
-import "./form"
+import "./Form"
 import Bulmatown from "bulmatown"
 
 import Swup from "swup"

@@ -10,7 +10,10 @@ inject_into_file("webpack.config.js", after: "extensions: [\".js\", \".jsx\"],\n
 JS
   end
 
-inject_into_file("webpack.config.js", after: "plugins: [\n") do
+inject_into_file(
+  "webpack.config.js",
+  before: "              [\"@babel/plugin-proposal-decorators\", { \"legacy\": true }],\n"
+) do
 <<-JS
               ["@babel/plugin-transform-react-jsx", {
                 "pragma": "h",
@@ -19,5 +22,6 @@ inject_into_file("webpack.config.js", after: "plugins: [\n") do
 JS
 end
 
-say_status "preact", "Preact and React Hook Form have been installed!"
-say_status "preact", "Example form code here: https://github.com/jaredcwhite/example-bridgetown-preact/blob/master/frontend/javascript/Form.jsx"
+say_status "setup", "Preact and React Hook Form have been installed!"
+say_status "setup", "Example form code here: https://github.com/jaredcwhite/example-bridgetown-preact/blob/master/frontend/javascript/Form.jsx"
+say_status "setup", "Just add <my-preact-form></my-preact-form> to a page to display the example form."
