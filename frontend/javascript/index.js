@@ -14,5 +14,12 @@ const swup = new Swup({
   ]
 })
 
+swup.on("transitionStart", () => {
+  if (document.querySelector('#top-navbar').classList.contains('is-active')) {
+    document.querySelector('body > nav .navbar-burger').classList.toggle('is-active')
+    document.querySelector('#top-navbar').classList.toggle('is-active')
+  }
+})
+
 console.info("Bridgetown is loaded!")
 
