@@ -26,10 +26,6 @@ module.exports = {
     },
   },
   plugins: [
-              ["@babel/plugin-transform-react-jsx", {
-                "pragma": "h",
-                "pragmaFrag": "Fragment",
-              }],
     new MiniCssExtractPlugin({
       filename: "../css/all.[contenthash].css",
     }),
